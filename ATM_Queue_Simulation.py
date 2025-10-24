@@ -81,6 +81,7 @@ def run_simulation(scenario):
         "Total Customers Handled": customers_handled[0],
         "Average Wait Time": np.mean(wait_times) if wait_times else 0,
         "Average Queue Length": np.mean(queue_lengths) if queue_lengths else 0,
+        "ATM Utilization (%)": ((customers_handled[0] * scenario["AVG_SERVICE_TIME"]) / (scenario["NUM_ATMS"] * SIM_TIME)) * 100,
         "Wait Times": wait_times
     }
 
@@ -92,7 +93,7 @@ for s in scenarios:
 # ------------ Print results ------------ 
 df = pd.DataFrame([results[i] for i in range(len(results))], columns=[
     "Scenario", "Number of ATMs", "Average Service Time", "Inter-arrival Mean", 
-    "Total Customers Handled", "Average Wait Time", "Average Queue Length"])
+    "Total Customers Handled", "Average Wait Time", "Average Queue Length", "ATM Utilization (%)"])
 print(df.to_string(index=False))
 
 # ------------ Plotting results ------------ 
