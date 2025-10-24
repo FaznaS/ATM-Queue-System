@@ -29,6 +29,7 @@ Three scenarios used for testing under a simulation time of 180 minutes:
 |--------------------|-----------------|--------------------|---------------------------------|--------------------------------------|
 | Base Case          | Normal operation | 1 | 3 | 4 |
 | Increased ATMs     | More ATMs to reduce waiting time | 2 | 3 | 4 |
+| More Customers     | More customers to analyze ATM utilization | 2 | 3 | 3 |
 
 ## Output
 Average waiting time, average queue length, ATM usage and the number of customers handled
