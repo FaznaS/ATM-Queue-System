@@ -3,7 +3,7 @@
 The ATM Queue System is a Python‐based simulation that models customers arriving at an ATM, waiting in a queue, being served, and leaving. The goal is to study queue behaviour under different parameter settings.
 This simulation can be applied to study queueing systems, performance optimization, or customer service strategies in banking environments.
 
-## 🚀 Getting Started
+## Getting Started
 
 - Python 3.x (recommend version 3.6+)
 - Install dependencies:
@@ -14,7 +14,7 @@ This simulation can be applied to study queueing systems, performance optimizati
   ```bash
   git clone https://github.com/FaznaS/ATM-Queue-System.git
 
-## 🧠 How It Works
+## How It Works
   1.	Each customer arrives at the ATM at random times
   2.	Each customer requests an ATM resource
   3.	If all ATMs are occupied, they wait in a queue
@@ -22,7 +22,7 @@ This simulation can be applied to study queueing systems, performance optimizati
   5.	Leave after finishing
 
 
-## 📊 Simulation Scenarios Used
+## Simulation Scenarios Used
 Three scenarios used for testing under a simulation time of 180 minutes:
 
 | **Scenario**      | **Description** | **Number of ATMs** | **Average Service Time (min)** | **Mean Time Between Arrivals (min)** |
